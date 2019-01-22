@@ -12,5 +12,5 @@ Bevindingen m.b.t. de volgende onderwerpen kunnen op deze issue tracker ingedien
 -	Duidelijkheid documentatie
 -	Performance
 -	API technische bevindingen:
-  o OData
-  o SyncFeed
+  - OData
+  - SyncFeed
