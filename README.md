@@ -1,5 +1,5 @@
 # OpenDataAPI2.0
-De nieuwe versie van de Open Data API, gepland voor livegang in april 2019.
+De nieuwe versie van de Open Data API, gepland voor livegang in april 2019. Deze nieuwe versie gaat de datakwaliteit problemen oplossen van de huidige productie omgeving. Daarnaast krijgen de API's een nieuwe versie en wordt het informatiemodel aangepast. De problemen van de productie omgeving worden hier niet geregistreerd.
 
 Deze GitHub pagina is een Proof Of Concept (PoC) die gedaan wordt om met externe afnemers van het Open Data Portaal (opendata.tweedekamer.nl) een centrale issue tracker te faciliteren. Deze PoC wordt in april 2019, na live-gang, geëvalueerd. 
 
