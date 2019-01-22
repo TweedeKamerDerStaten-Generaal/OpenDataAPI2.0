@@ -7,6 +7,9 @@ Externe afnemers kunnen na registratie toegang krijgen tot de acceptatieomgeving
 - OData V4
 - SyncFeed (Atom 1.0)
 
+Documentatie van de nieuwe API's is te vinden op:
+https://opendata.tweedekamer.nl/documentatie/api-en-informatiemodel-veranderingen-april-2019-release
+
 Bevindingen m.b.t. de volgende onderwerpen kunnen op deze issue tracker ingediend worden:
 -	Datakwaliteit
 -	Duidelijkheid documentatie
