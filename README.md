@@ -19,7 +19,7 @@ Bevindingen m.b.t. de volgende onderwerpen kunnen op deze issue tracker ingedien
   - SyncFeed
 
 Let op:
--	Wij gaan nog releases doen op Acceptatie zodra dit opportuun is. Hiervan houden we de deelnemers zo goed mogelijk van op de hoogte via e-mail. Na verwachting doen wij komende week nog een full-reload.
+-	Wij gaan nog releases doen op Acceptatie zodra dit opportuun is. Hiervan houden we de deelnemers zo goed mogelijk van op de hoogte via e-mail.
 -	Bron-systemen kunnen tevens nog releases doen, hoewel wij niet verwachten dat dit effect heeft op de afnemers kunnen we dit nog niet uitsluiten.
 -	Data volledigheid op acceptatie per entiteit:
 1. Personen (incl geschenken, reizen, nevenfuncties en CV), Commissies en Fracties betreft een momentopname (snap-shot), dit wordt niet near-time bijgewerkt.
