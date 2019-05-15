@@ -1,7 +1,7 @@
 # OpenDataAPI2.0
 De nieuwe versie van de Open Data API is live gegaan op 1 april 2019. De problemen van de productie omgeving worden hier geregistreerd.
 
-Deze GitHub pagina is een Proof Of Concept (PoC) die gedaan wordt om met externe afnemers van het Open Data Portaal (opendata.tweedekamer.nl) een centrale issue tracker te faciliteren. Deze PoC wordt in april 2019 geëvalueerd. Documentatie van de API's en het informatiemodel is te vinden op:
+Deze GitHub pagina is om met externe afnemers van het Open Data Portaal (opendata.tweedekamer.nl) een centrale issue tracker te faciliteren. Documentatie van de API's en het informatiemodel is te vinden op:
 https://opendata.tweedekamer.nl/documentatie/api-documentatie-20
 
 Bevindingen m.b.t. de volgende onderwerpen kunnen op deze issue tracker ingediend worden:
