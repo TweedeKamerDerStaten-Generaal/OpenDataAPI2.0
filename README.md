@@ -17,7 +17,7 @@ Toekomstige ontwikkelingen in nieuwe versies zullen aparte repositories worden.
 Let op:
 -	Data per entiteit is near-time:
 1. Personen (incl geschenken, reizen, nevenfuncties en CV), Commissies en Fracties. (Entiteiten: commissie, commissieContactinformatie, commissieZetel, commissieZetelVastPersoon, commissieZetelVastVacature, commissieZetelVervangerPersoon, commissieZetelVervangerVacature, fractie, fractieAanvullendGegeven, fractieZetel, fractieZetelPersoon, fractieZetelVacature, persoon, persoonContactinformatie, persoonGeschenk, persoonLoopbaan, persoonNevenfunctie, persoonNevenfunctieInkomsten, persoonOnderwijs en persoonReis)
-2. UITGESTELD: Data ondersteunend aan het werkproces van de Griffie. (Entiteiten: activiteit, activiteitActor, agendapunt, besluit, document, documentActor, documentVersie, kamerstukdossier, reservering, stemming, zaak, zaakActor en zaal.)
+2. Data ondersteunend aan het werkproces van de Griffie. (Entiteiten: activiteit, activiteitActor, agendapunt, besluit, document, documentActor, documentVersie, kamerstukdossier, reservering, stemming, zaak, zaakActor en zaal.)
 3. Verslag & Vergadering (Entiteiten: verslag en vergadering)
 
 -	Redactie: Dit blijft een Proof Of Concept. Afnemers zullen steeds minder Personen, Fracties en Commissies zelf hoeven te koppelen.
