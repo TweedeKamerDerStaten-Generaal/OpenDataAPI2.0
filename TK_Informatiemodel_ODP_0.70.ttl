@@ -1,0 +1,588 @@
+@prefix : <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70> .
+
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70> rdf:type owl:Ontology ;
+                                                                 <http://purl.org/dc/terms/created> "2019-04-24T11:30:03.078Z"^^xsd:dateTime ;
+                                                                 <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                 <http://schema.semantic-web.at/ppt/BaseUrl> "https://tweedekamer.poolparty.biz" ;
+                                                                 <http://schema.semantic-web.at/ppt/ResourceSeparator> "/" ;
+                                                                 <http://schema.semantic-web.at/ppt/containsAttributeProperty> <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum> ,
+                                                                                                                               <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum_2> ,
+                                                                                                                               <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort> ,
+                                                                                                                               <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort_2> ;
+                                                                 <http://schema.semantic-web.at/ppt/containsCustomType> <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/ActviteitActor> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentActor> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentVersie> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieAanvullendGegeven> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetel> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelPersoon> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelVacature> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonContactinformatie> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonLoopbaan> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctieInkomsten> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonOnderwijs> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonReis> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Vergadering> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Verslag> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/ZaakActor> ,
+                                                                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaal> ;
+                                                                 <http://schema.semantic-web.at/ppt/containsDirectedProperty> <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/BestaatUit> ,
+                                                                                                                              <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/VoertUit> ,
+                                                                                                                              <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/WordtUitgevoerdDoor> ,
+                                                                                                                              <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Agendapunt> ,
+                                                                                                                              <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Kamerstukdossier> ;
+                                                                 <http://schema.semantic-web.at/ppt/containsSymmetricProperty> <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Activiteit_Voortgezet> ;
+                                                                 <http://schema.semantic-web.at/ppt/hasLanguagePreference> <urn:node1d8j3vbmix120474> ;
+                                                                 <http://schema.semantic-web.at/ppt/identifier> "TK_Informatiemodel_ODP" ;
+                                                                 <http://schema.semantic-web.at/ppt/visible> "PUBLIC" ;
+                                                                 rdfs:label "TK Informatiemodel Open Data Portaal"@nl .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/BaseUrl
+<http://schema.semantic-web.at/ppt/BaseUrl> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/ResourceSeparator
+<http://schema.semantic-web.at/ppt/ResourceSeparator> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsAttributeProperty
+<http://schema.semantic-web.at/ppt/containsAttributeProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsCustomType
+<http://schema.semantic-web.at/ppt/containsCustomType> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsDirectedProperty
+<http://schema.semantic-web.at/ppt/containsDirectedProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsSymmetricProperty
+<http://schema.semantic-web.at/ppt/containsSymmetricProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/hasLanguagePreference
+<http://schema.semantic-web.at/ppt/hasLanguagePreference> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/identifier
+<http://schema.semantic-web.at/ppt/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/languagePreferencePriority
+<http://schema.semantic-web.at/ppt/languagePreferencePriority> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/languagePreferenceValue
+<http://schema.semantic-web.at/ppt/languagePreferenceValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/singleLineInput
+<http://schema.semantic-web.at/ppt/singleLineInput> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/visible
+<http://schema.semantic-web.at/ppt/visible> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/RCOZ1fSFJGVSdGj6z7nuCzN
+<http://webprotege.stanford.edu/RCOZ1fSFJGVSdGj6z7nuCzN> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7195nK3k9QIB4lUva9xY0E> ,
+                                                                     <http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd> ,
+                                                                     <http://webprotege.stanford.edu/R7r00LWkh9lxR6VuUkJgTQC> ,
+                                                                     <http://webprotege.stanford.edu/R9MmbYKL7KXl4LR1MT6yMPV> ,
+                                                                     <http://webprotege.stanford.edu/R9SoAN4fEwv5jR3LmkrMTA7> ,
+                                                                     <http://webprotege.stanford.edu/RCPofiIFzbRAu1STzbXINm4> ,
+                                                                     <http://webprotege.stanford.edu/RCRrhIMmQGGFMJMgJtM9f1l> ,
+                                                                     <http://webprotege.stanford.edu/RKQosLRrFcTzQPPSk6UD4s> ,
+                                                                     <http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6> ,
+                                                                     <http://webprotege.stanford.edu/RlPVHR6gXo8slRCtMeVbgA> ,
+                                                                     <http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieAanvullendGegeven> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelPersoon> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelVacature> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonContactinformatie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonLoopbaan> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctieInkomsten> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonOnderwijs> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonReis> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaal> ;
+                                                         rdfs:comment "Een entiteit heeft altijd een APIGewijzigdOp kolom"^^xsd:string ;
+                                                         rdfs:label "APIGewijzigdOp"@nl .
+
+
+###  http://webprotege.stanford.edu/RCzyRpW1wFACfmUhv7Ftod0
+<http://webprotege.stanford.edu/RCzyRpW1wFACfmUhv7Ftod0> rdf:type owl:ObjectProperty ;
+                                                         rdfs:domain <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                         rdfs:comment "Een entiteit kan meerdere soorten hebben"^^xsd:string ;
+                                                         rdfs:label "Soort"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Activiteit_Voortgezet
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Activiteit_Voortgezet> rdf:type owl:ObjectProperty ,
+                                                                                               owl:SymmetricProperty ;
+                                                                                      <http://purl.org/dc/terms/created> "2019-04-24T11:41:27.896Z"^^xsd:dateTime ;
+                                                                                      <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                      rdfs:comment "Heeft zowel voorgezet vanuit als voortgezet in."@nl ;
+                                                                                      rdfs:label "Activiteit_Voortgezet"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/BestaatUit
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/BestaatUit> rdf:type owl:ObjectProperty ;
+                                                                           <http://purl.org/dc/terms/created> "2019-05-20T14:54:00.209Z"^^xsd:dateTime ;
+                                                                           <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                           rdfs:label "BestaatUit"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/VoertUit
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/VoertUit> rdf:type owl:ObjectProperty ;
+                                                                         <http://purl.org/dc/terms/created> "2019-05-20T14:55:32.731Z"^^xsd:dateTime ;
+                                                                         <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                         rdfs:label "VoertUit"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/WordtUitgevoerdDoor
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/WordtUitgevoerdDoor> rdf:type owl:ObjectProperty ;
+                                                                                    <http://purl.org/dc/terms/created> "2019-05-20T14:54:35.646Z"^^xsd:dateTime ;
+                                                                                    <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                    rdfs:label "WordtUitgevoerdDoor"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Agendapunt
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Agendapunt> rdf:type owl:ObjectProperty ;
+                                                                                <http://purl.org/dc/terms/created> "2019-04-24T11:42:58.926Z"^^xsd:dateTime ;
+                                                                                <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                rdfs:comment "Een zaak wordt behandeld in 0 of meer Agendapunt(en)."@nl ;
+                                                                                rdfs:label "Zaak_Agendapunt"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Kamerstukdossier
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak_Kamerstukdossier> rdf:type owl:ObjectProperty ;
+                                                                                      <http://purl.org/dc/terms/created> "2019-11-08T13:28:12.760Z"^^xsd:dateTime ;
+                                                                                      <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                      rdfs:label "Zaak_Kamerstukdossier"@nl .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/RCr7F3xU8jToQ6iI0DydE03
+<http://webprotege.stanford.edu/RCr7F3xU8jToQ6iI0DydE03> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <http://webprotege.stanford.edu/R7195nK3k9QIB4lUva9xY0E> ,
+                                                                     <http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd> ,
+                                                                     <http://webprotege.stanford.edu/R7r00LWkh9lxR6VuUkJgTQC> ,
+                                                                     <http://webprotege.stanford.edu/R9MmbYKL7KXl4LR1MT6yMPV> ,
+                                                                     <http://webprotege.stanford.edu/R9SoAN4fEwv5jR3LmkrMTA7> ,
+                                                                     <http://webprotege.stanford.edu/RCPofiIFzbRAu1STzbXINm4> ,
+                                                                     <http://webprotege.stanford.edu/RCRrhIMmQGGFMJMgJtM9f1l> ,
+                                                                     <http://webprotege.stanford.edu/RKQosLRrFcTzQPPSk6UD4s> ,
+                                                                     <http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6> ,
+                                                                     <http://webprotege.stanford.edu/RlPVHR6gXo8slRCtMeVbgA> ,
+                                                                     <http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieAanvullendGegeven> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelPersoon> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelVacature> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonContactinformatie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonLoopbaan> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctieInkomsten> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonOnderwijs> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonReis> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ,
+                                                                     <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaal> ;
+                                                         rdfs:range rdfs:Literal ;
+                                                         rdfs:comment "Een entiteit heeft altijd een APIGewijzigdOp kolom"^^xsd:string ;
+                                                         rdfs:label "APIGewijzigdOp"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum> rdf:type owl:DatatypeProperty ,
+                                                                               owl:FunctionalProperty ;
+                                                                      rdfs:range xsd:dateTime ;
+                                                                      <http://purl.org/dc/terms/created> "2019-11-08T13:37:49.694Z"^^xsd:dateTime ;
+                                                                      <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                      rdfs:label "Datum"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum_2
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Datum_2> rdf:type owl:DatatypeProperty ,
+                                                                                 owl:FunctionalProperty ;
+                                                                        rdfs:range xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/created> "2019-11-08T13:40:05.794Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        rdfs:label "Datum"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                                  <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ,
+                                                                                  <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                                  <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ,
+                                                                                  [ rdf:type owl:Class ;
+                                                                                    owl:unionOf ( <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit>
+                                                                                                  <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak>
+                                                                                                )
+                                                                                  ] ;
+                                                                      rdfs:range rdfs:Literal ;
+                                                                      <http://purl.org/dc/terms/created> "2019-04-29T13:31:15.270Z"^^xsd:dateTime ;
+                                                                      rdfs:comment "Een entiteit kan meerdere soorten hebben"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort_2
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Soort_2> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:range rdfs:Literal ;
+                                                                        <http://purl.org/dc/terms/created> "2019-11-08T13:35:52.386Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        <http://schema.semantic-web.at/ppt/singleLineInput> "true"^^xsd:boolean ;
+                                                                        rdfs:comment "Mogelijke waarden: Aanbiedingsbrief, Aanhangsel van de Handelingen, Advies aan Presidium, Advies Afdeling advisering Raad van State, Advies Afdeling advisering Raad van State en Nader rapport, Advies Afdeling advisering Raad van State en Reactie van de initiatiefnemer(s), Advies commissie, Advies van andere adviesorganen, Adviesaanvraag Afdeling advisering Raad van State, Agenda plenaire vergadering, Agenda procedurevergadering, Amendement, Antwoord schriftelijke vragen, Antwoord schriftelijke vragen (nader), Begrotingstoelichting, Besluitenlijst procedurevergadering, Bijgewerkte tekst, Bijlage, Brief Afdeling advisering Raad van State, Brief Algemene Rekenkamer, Brief commissie, Brief commissie aan bewindspersoon, Brief CTIVD, Brief Eerste Kamer, Brief Europese Commissie, Brief formateur, Brief informateur, Brief Kamer, Brief lid / fractie, Brief Nationale ombudsman, Brief president Hoge Raad, Brief Presidium, Brief regering, Brief verkenner, Convocatie commissieactiviteit, Convocatie inbreng, Eindtekst, EU-voorstel, Geleidende brief, Groenboek/witboek, Inbreng verslag schriftelijk overleg, Initiatiefnota, Interpellatievragen, Jaarverslag, Koninklijke boodschap, Lijst met EU-voorstellen, Lijst van ingekomen stukken, Lijst van vragen, Lijst van vragen en antwoorden, Mededeling, Mededeling (uitstel antwoord), Memorie van toelichting, Memorie van toelichting (initiatiefvoorstel), Mondelinge vragen, Motie, Motie (gewijzigd/nader), Nader rapport, Nota, Nota n.a.v. het (nader/tweede nader/enz.) verslag, Nota van verbetering, Nota van wijziging, Nota van wijziging (initiatiefvoorstel), Onderzoeksvoorstel, Oorspronkelijke tekst, Overig, Position paper, Raming van de uitgaven, Rapport, Rapport Algemene Rekenkamer, Reactie initiatiefnemer(s), Schriftelijke vragen, Sprekerslijst, Stemmingslijst, Stemmingsuitslagen, Stenogram, Verslag (initiatief)wetsvoorstel (nader), Verslag commissie Verzoekschriften en de Burgerinitiatieven, Verslag houdende een lijst van vragen en antwoorden, Verslag van een algemeen overleg, Verslag van een bijeenkomst, Verslag van een hoorzitting / rondetafelgesprek, Verslag van een notaoverleg, Verslag van een politieke dialoog, Verslag van een rapporteur, Verslag van een schriftelijk overleg, Verslag van een werkbezoek, Verslag van een wetgevingsoverleg, Voordracht, Voorlichting Afdeling advisering Raad van State, Voorstel tot wijziging Reglement van Orde, Voorstel van wet, Voorstel van wet (initiatiefvoorstel), Voorstel van wet (tweede lezing), Wetenschappelijke factsheet, Wijzigingen voorgesteld door de regering"@nl ;
+                                                                        rdfs:label "Soort"@nl .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  http://schema.semantic-web.at/ppt/LanguagePreference
+<http://schema.semantic-web.at/ppt/LanguagePreference> rdf:type owl:Class .
+
+
+###  http://webprotege.stanford.edu/R7195nK3k9QIB4lUva9xY0E
+<http://webprotege.stanford.edu/R7195nK3k9QIB4lUva9xY0E> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd> ;
+                                                         rdfs:label "ZetelVervangendCommissielid"@nl .
+
+
+###  http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd
+<http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RCRrhIMmQGGFMJMgJtM9f1l> ,
+                                                                         <http://webprotege.stanford.edu/RKQosLRrFcTzQPPSk6UD4s> ,
+                                                                         <http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6> ;
+                                                         rdfs:label "CommissieZetel"@nl .
+
+
+###  http://webprotege.stanford.edu/R7r00LWkh9lxR6VuUkJgTQC
+<http://webprotege.stanford.edu/R7r00LWkh9lxR6VuUkJgTQC> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6> ;
+                                                         rdfs:label "CommissieContactinformatie"@nl .
+
+
+###  http://webprotege.stanford.edu/R9MmbYKL7KXl4LR1MT6yMPV
+<http://webprotege.stanford.edu/R9MmbYKL7KXl4LR1MT6yMPV> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ;
+                                                         rdfs:label "Versie"@nl .
+
+
+###  http://webprotege.stanford.edu/R9SoAN4fEwv5jR3LmkrMTA7
+<http://webprotege.stanford.edu/R9SoAN4fEwv5jR3LmkrMTA7> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                         rdfs:label "PersoonGeschenk"@nl .
+
+
+###  http://webprotege.stanford.edu/RCPofiIFzbRAu1STzbXINm4
+<http://webprotege.stanford.edu/RCPofiIFzbRAu1STzbXINm4> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <http://webprotege.stanford.edu/R7NaC0DmXpWDpt5vCq9PaKd> ;
+                                                         rdfs:label "ZetelVastCommissielid"@nl .
+
+
+###  http://webprotege.stanford.edu/RCRrhIMmQGGFMJMgJtM9f1l
+<http://webprotege.stanford.edu/RCRrhIMmQGGFMJMgJtM9f1l> rdf:type owl:Class ;
+                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ;
+                                                         rdfs:label "FractieVervangerVacature"@nl .
+
+
+###  http://webprotege.stanford.edu/RKQosLRrFcTzQPPSk6UD4s
+<http://webprotege.stanford.edu/RKQosLRrFcTzQPPSk6UD4s> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ;
+                                                        rdfs:label "FractieVasteVacature"@nl .
+
+
+###  http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6
+<http://webprotege.stanford.edu/RRY82MwxudgolBU98prbV6> rdf:type owl:Class ;
+                                                        rdfs:label "Commissie"@nl .
+
+
+###  http://webprotege.stanford.edu/RlPVHR6gXo8slRCtMeVbgA
+<http://webprotege.stanford.edu/RlPVHR6gXo8slRCtMeVbgA> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <http://webprotege.stanford.edu/RlPVHR6gXo8slRCtMeVbgA> ,
+                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                        <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming> ;
+                                                        rdfs:label "Actor"@nl .
+
+
+###  http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH
+<http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH> rdf:type owl:Class ;
+                                                        rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ;
+                                                        rdfs:label "FractieZetel"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                                          <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> ,
+                                                                                          <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                                          <http://purl.org/dc/terms/created> "2019-04-24T11:30:44.359Z"^^xsd:dateTime ;
+                                                                          <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                          rdfs:comment "Deze entiteit heeft verschillende soorten en wordt gebruikt om de agenda's vast te stellen van o.a. bezoeken en vergaderingen."@nl ;
+                                                                          rdfs:label "Activiteit"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/ActviteitActor
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/ActviteitActor> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ;
+                                                                               <http://purl.org/dc/terms/created> "2019-04-24T11:37:04.189Z"^^xsd:dateTime ;
+                                                                               <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                               rdfs:label "ActviteitActor"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt> rdf:type owl:Class ;
+                                                                           rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Actviteit> ,
+                                                                                           <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                                           <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                                           <http://purl.org/dc/terms/created> "2019-04-24T11:31:22.428Z"^^xsd:dateTime ;
+                                                                           <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                           rdfs:comment "Een activiteit kan meerdere agendapunten hebben."@nl ;
+                                                                           rdfs:label "Agendapunt"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Agendapunt> ;
+                                                                        <http://purl.org/dc/terms/created> "2019-04-24T11:32:12.701Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        rdfs:label "Besluit"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ,
+                                                                                         <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier> ,
+                                                                                         <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                                         <http://purl.org/dc/terms/created> "2019-04-24T11:34:01.633Z"^^xsd:dateTime ;
+                                                                         <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                         rdfs:label "Document"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentActor
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentActor> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ;
+                                                                              <http://purl.org/dc/terms/created> "2019-04-24T11:36:44.671Z"^^xsd:dateTime ;
+                                                                              <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                              rdfs:label "DocumentActor"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentVersie
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/DocumentVersie> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Document> ;
+                                                                               <http://purl.org/dc/terms/created> "2019-04-24T11:34:39.846Z"^^xsd:dateTime ;
+                                                                               <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                               rdfs:label "DocumentVersie"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> rdf:type owl:Class ;
+                                                                        <http://purl.org/dc/terms/created> "2019-04-24T12:03:47.235Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        rdfs:label "Fractie"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieAanvullendGegeven
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieAanvullendGegeven> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Fractie> ;
+                                                                                         <http://purl.org/dc/terms/created> "2019-04-24T12:04:00.815Z"^^xsd:dateTime ;
+                                                                                         <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                         rdfs:label "AanvullendGegeven"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelPersoon
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelPersoon> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH> ;
+                                                                                    rdfs:label "FractieZetelPersoon"^^xsd:string .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelVacature
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/FractieZetelVacature> rdf:type owl:Class ;
+                                                                                     rdfs:subClassOf <http://webprotege.stanford.edu/Rp3DdLShWijHPSiudkOirH> ;
+                                                                                     rdfs:label "FractieZetelVacature"^^xsd:string .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Kamerstukdossier> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                                                 <http://purl.org/dc/terms/created> "2019-04-24T11:34:54.719Z"^^xsd:dateTime ;
+                                                                                 <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                 rdfs:label "Kamerstukdossier"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> rdf:type owl:Class ;
+                                                                        <http://purl.org/dc/terms/created> "2019-04-24T12:01:23.952Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        rdfs:label "Persoon"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonContactinformatie
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonContactinformatie> rdf:type owl:Class ;
+                                                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                                                         <http://purl.org/dc/terms/created> "2019-04-24T12:01:40.442Z"^^xsd:dateTime ;
+                                                                                         <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                         rdfs:label "PersoonContactinformatie"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonLoopbaan
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonLoopbaan> rdf:type owl:Class ;
+                                                                                rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                                                <http://purl.org/dc/terms/created> "2019-04-24T12:02:05.162Z"^^xsd:dateTime ;
+                                                                                <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                rdfs:label "PersoonLoopbaan"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie> rdf:type owl:Class ;
+                                                                                    rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                                                    <http://purl.org/dc/terms/created> "2019-04-24T12:02:20.433Z"^^xsd:dateTime ;
+                                                                                    <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                    rdfs:label "PersoonNevenfunctie"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctieInkomsten
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctieInkomsten> rdf:type owl:Class ;
+                                                                                             rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonNevenfunctie> ;
+                                                                                             <http://purl.org/dc/terms/created> "2019-04-24T12:02:35.871Z"^^xsd:dateTime ;
+                                                                                             <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                             rdfs:label "PersoonNevenfunctieInkomsten"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonOnderwijs
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonOnderwijs> rdf:type owl:Class ;
+                                                                                 rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                                                 <http://purl.org/dc/terms/created> "2019-04-24T12:02:53.696Z"^^xsd:dateTime ;
+                                                                                 <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                                 rdfs:label "PersoonOnderwijs"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonReis
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/PersoonReis> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Persoon> ;
+                                                                            <http://purl.org/dc/terms/created> "2019-04-24T12:03:07.240Z"^^xsd:dateTime ;
+                                                                            <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                            rdfs:label "PersoonReis"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> rdf:type owl:Class ;
+                                                                            <http://purl.org/dc/terms/created> "2019-04-24T11:33:30.075Z"^^xsd:dateTime ;
+                                                                            <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                            rdfs:label "Reservering"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Stemming> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Besluit> ;
+                                                                         <http://purl.org/dc/terms/created> "2019-04-24T11:33:09.159Z"^^xsd:dateTime ;
+                                                                         <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                         rdfs:label "Stemming"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Vergadering
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Vergadering> rdf:type owl:Class ;
+                                                                            <http://purl.org/dc/terms/created> "2019-04-24T11:35:42.546Z"^^xsd:dateTime ;
+                                                                            <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                            rdfs:label "Vergadering"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Verslag
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Verslag> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Vergadering> ;
+                                                                        <http://purl.org/dc/terms/created> "2019-04-24T11:36:07.920Z"^^xsd:dateTime ;
+                                                                        <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                        rdfs:label "Verslag"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaak> ;
+                                                                     <http://purl.org/dc/terms/created> "2019-04-24T11:35:04.430Z"^^xsd:dateTime ;
+                                                                     <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                     rdfs:label "Zaak"@nl .
+
+
+###  https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaal
+<https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Zaal> rdf:type owl:Class ;
+                                                                     rdfs:subClassOf <https://tweedekamer.poolparty.biz/TK_Informatiemodel_ODP_0.70/Reservering> ;
+                                                                     <http://purl.org/dc/terms/created> "2019-04-24T11:33:42.143Z"^^xsd:dateTime ;
+                                                                     <http://purl.org/dc/terms/creator> <https://tweedekamer.poolparty.biz/user/d.vhiltentweedekamer.nl> ;
+                                                                     rdfs:comment "Test van Amber en Daniël of dit geïmporteerd wordt."@nl ;
+                                                                     rdfs:label "Zaal"@nl .
+
+
+#################################################################
+#    Individuals
+#################################################################
+
+###  urn:node1d8j3vbmix120474
+<urn:node1d8j3vbmix120474> rdf:type owl:NamedIndividual ,
+                                    <http://schema.semantic-web.at/ppt/LanguagePreference> ;
+                           <http://schema.semantic-web.at/ppt/languagePreferencePriority> "0"^^xsd:int ;
+                           <http://schema.semantic-web.at/ppt/languagePreferenceValue> "nl" .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
