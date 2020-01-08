@@ -1,0 +1,2211 @@
+@prefix : <https://opendata.tweedekamer.nl/documentatie#> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdf: <http://www.w3.org/1999/02/22-rdf-syntax-ns#> .
+@prefix xml: <http://www.w3.org/XML/1998/namespace> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@base <https://opendata.tweedekamer.nl/documentatie> .
+
+<https://opendata.tweedekamer.nl/documentatie> rdf:type owl:Ontology ;
+                                                <http://purl.org/dc/terms/created> "2019-04-24T11:30:03.078Z"^^xsd:dateTime ;
+                                                <http://schema.semantic-web.at/ppt/BaseUrl> "https://opendata.tweedekamer.nl" ;
+                                                <http://schema.semantic-web.at/ppt/ResourceSeparator> "/" ;
+                                                <http://schema.semantic-web.at/ppt/hasLanguagePreference> <urn:node1d8j3vbmix120474> ;
+                                                <http://schema.semantic-web.at/ppt/identifier> "TK_Informatiemodel_ODP_090" ;
+                                                <http://schema.semantic-web.at/ppt/visible> "PUBLIC" ;
+                                                rdfs:label "TK Informatiemodel Open Data Portaal 0.90" .
+
+#################################################################
+#    Annotation properties
+#################################################################
+
+###  http://purl.org/dc/terms/created
+<http://purl.org/dc/terms/created> rdf:type owl:AnnotationProperty .
+
+
+###  http://purl.org/dc/terms/creator
+<http://purl.org/dc/terms/creator> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/BaseUrl
+<http://schema.semantic-web.at/ppt/BaseUrl> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/ResourceSeparator
+<http://schema.semantic-web.at/ppt/ResourceSeparator> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsAttributeProperty
+<http://schema.semantic-web.at/ppt/containsAttributeProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsCustomType
+<http://schema.semantic-web.at/ppt/containsCustomType> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsDirectedProperty
+<http://schema.semantic-web.at/ppt/containsDirectedProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/containsSymmetricProperty
+<http://schema.semantic-web.at/ppt/containsSymmetricProperty> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/hasLanguagePreference
+<http://schema.semantic-web.at/ppt/hasLanguagePreference> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/identifier
+<http://schema.semantic-web.at/ppt/identifier> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/languagePreferencePriority
+<http://schema.semantic-web.at/ppt/languagePreferencePriority> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/languagePreferenceValue
+<http://schema.semantic-web.at/ppt/languagePreferenceValue> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/singleLineInput
+<http://schema.semantic-web.at/ppt/singleLineInput> rdf:type owl:AnnotationProperty .
+
+
+###  http://schema.semantic-web.at/ppt/visible
+<http://schema.semantic-web.at/ppt/visible> rdf:type owl:AnnotationProperty .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#label
+rdfs:label rdf:type owl:AnnotationProperty ;
+           rdfs:label "rdfs:label" .
+
+
+###  http://www.w3.org/2004/02/skos/core#comment
+<http://www.w3.org/2004/02/skos/core#comment> rdf:type owl:AnnotationProperty .
+
+
+#################################################################
+#    Datatypes
+#################################################################
+
+###  http://webprotege.stanford.edu/RCGNEVZuUyCuA6Z2vKFqHDl
+<http://webprotege.stanford.edu/RCGNEVZuUyCuA6Z2vKFqHDl> rdf:type rdfs:Datatype ;
+                                                         rdfs:label "UniqueIndentifier " .
+
+
+###  http://www.w3.org/2000/01/rdf-schema#range
+rdfs:range rdf:type rdfs:Datatype ;
+           rdfs:label "rdfs:range" .
+
+
+#################################################################
+#    Object Properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R2kRs11QL4eyawobJ8XcRn
+<http://webprotege.stanford.edu/R2kRs11QL4eyawobJ8XcRn> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                        rdfs:label "ZaakActor linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R3K3y7LLRcRoTMjkVsZPfO
+<http://webprotege.stanford.edu/R3K3y7LLRcRoTMjkVsZPfO> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                        rdfs:label "DocumentActor linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R702ppMwv5PwZZjEtFNMtsp
+<http://webprotege.stanford.edu/R702ppMwv5PwZZjEtFNMtsp> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> ;
+                                                         rdfs:label "Fractie linkt naar FractieAanvullendGegeven"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R72YQgGPRI36Fbr60Fmm4LM
+<http://webprotege.stanford.edu/R72YQgGPRI36Fbr60Fmm4LM> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "PersoonOnderwijs linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7AqJ9bu60e2tiXKPBzKuoB
+<http://webprotege.stanford.edu/R7AqJ9bu60e2tiXKPBzKuoB> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                         rdfs:label "Stemming linkt naar Besluit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7IKHXg7WPOfNAq8gYjChI5
+<http://webprotege.stanford.edu/R7IKHXg7WPOfNAq8gYjChI5> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                         rdfs:label "Document linkt naar DocumentVersie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7JE39hHg0d9b4dE7er8dJK
+<http://webprotege.stanford.edu/R7JE39hHg0d9b4dE7er8dJK> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:label "CommissieZetelVervangerVacature linkt naar CommissieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7K8uXwSXqRemA9hHnhlLxL
+<http://webprotege.stanford.edu/R7K8uXwSXqRemA9hHnhlLxL> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "ZaakActor linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7Wxh9lirmQKcLWTElGteQ4
+<http://webprotege.stanford.edu/R7Wxh9lirmQKcLWTElGteQ4> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:label "Besluit linkt naar Stemming"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7Z6fsT3RuSn9opIm7YNQIa
+<http://webprotege.stanford.edu/R7Z6fsT3RuSn9opIm7YNQIa> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:label "CommissieContactinformatie linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7bM4uDe35Ev3e56Md4JF5H
+<http://webprotege.stanford.edu/R7bM4uDe35Ev3e56Md4JF5H> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                         rdfs:label "PersoonNevenfunctieInkomsten linkt naar PersoonNevenfunctie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7j9S798UHEaP1gH7i2IWdI
+<http://webprotege.stanford.edu/R7j9S798UHEaP1gH7i2IWdI> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:label "CommissieZetelVastPersoon linkt naar CommissieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7nM4Kgl3C5SU1TUc73jnao
+<http://webprotege.stanford.edu/R7nM4Kgl3C5SU1TUc73jnao> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                         rdfs:label "Document linkt naar Kamerstukdossier"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7rR2ppVn20lmSUjmcITC7R
+<http://webprotege.stanford.edu/R7rR2ppVn20lmSUjmcITC7R> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                         rdfs:label "Persoon linkt naar PersoonNevenfunctie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7rflYrpB8kC3QQVfgTz0VX
+<http://webprotege.stanford.edu/R7rflYrpB8kC3QQVfgTz0VX> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ;
+                                                         rdfs:label "FractieZetel linkt naar FractieZetelPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R7vsEHztsk0Bg5LJk7TkTqo
+<http://webprotege.stanford.edu/R7vsEHztsk0Bg5LJk7TkTqo> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk> ;
+                                                         rdfs:label "Persoon linkt naar PersoonGeschenk"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R80pMb7CdE8QZ88JThXbz8V
+<http://webprotege.stanford.edu/R80pMb7CdE8QZ88JThXbz8V> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:label "ActiviteitActor linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R81PeXFpyuFScTYTzqdYihQ
+<http://webprotege.stanford.edu/R81PeXFpyuFScTYTzqdYihQ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                         rdfs:label "Activiteit linkt naar Reservering"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R85Xj5GoLRxjL1F2ryGX0AS
+<http://webprotege.stanford.edu/R85Xj5GoLRxjL1F2ryGX0AS> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaal> ;
+                                                         rdfs:label "Reservering linkt naar Zaal"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8EsRFZ6aDtcDlYRrtLQuu1
+<http://webprotege.stanford.edu/R8EsRFZ6aDtcDlYRrtLQuu1> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:label "ActiviteitActor linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8Lh1Pp51pl8WR5NhARPyga
+<http://webprotege.stanford.edu/R8Lh1Pp51pl8WR5NhARPyga> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                         rdfs:label "Persoon linkt naar PersoonOnderwijs"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8PQWdG58BbIk5pWzRqUiJm
+<http://webprotege.stanford.edu/R8PQWdG58BbIk5pWzRqUiJm> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "PersoonLoopbaan linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8R5vtrG1V0dWpU4NbVTMRV
+<http://webprotege.stanford.edu/R8R5vtrG1V0dWpU4NbVTMRV> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                         rdfs:label "Persoon linkt naar DocumentActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8RMrVkxq2VanmIZNOnfcTZ
+<http://webprotege.stanford.edu/R8RMrVkxq2VanmIZNOnfcTZ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                         rdfs:label "Document linkt naar DocumentActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8W5WtCYttEn19G36Ywbzot
+<http://webprotege.stanford.edu/R8W5WtCYttEn19G36Ywbzot> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:label "Kamerstukdossier linkt naar Document"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8XL4I6l11WJvtaeklIAZBT
+<http://webprotege.stanford.edu/R8XL4I6l11WJvtaeklIAZBT> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:label "CommissieZetel linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8eizY6iooDHznDX1SCZDsk
+<http://webprotege.stanford.edu/R8eizY6iooDHznDX1SCZDsk> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:label "Zaak linkt naar Agendapunt"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8nvk6STnSuYS3NBiClxJmH
+<http://webprotege.stanford.edu/R8nvk6STnSuYS3NBiClxJmH> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:label "Stemming linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8oSKwhsZcO3ZLjCW3ua1IZ
+<http://webprotege.stanford.edu/R8oSKwhsZcO3ZLjCW3ua1IZ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ;
+                                                         rdfs:label "Fractie linkt naar CommissieZetelVastVacature"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8zWBrnniZIxeLY1uuq87RE
+<http://webprotege.stanford.edu/R8zWBrnniZIxeLY1uuq87RE> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "ActiviteitActor linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R8zfyyKInUeUjpxLunaV3lp
+<http://webprotege.stanford.edu/R8zfyyKInUeUjpxLunaV3lp> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:label "Document linkt naar Agendapunt"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R963YTtJ6rLw2winYdBkWkH
+<http://webprotege.stanford.edu/R963YTtJ6rLw2winYdBkWkH> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                         rdfs:label "Commissie linkt naar ZaakActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9EmNxbH8YUcigDd9TNkr3c
+<http://webprotege.stanford.edu/R9EmNxbH8YUcigDd9TNkr3c> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:label "Fractie linkt naar Stemming"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9Fc0thzTYfvdPu1qUKiZCI
+<http://webprotege.stanford.edu/R9Fc0thzTYfvdPu1qUKiZCI> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                         rdfs:label "Fractie linkt naar FractieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9JOljSdQ40iOCffsJvjpKg
+<http://webprotege.stanford.edu/R9JOljSdQ40iOCffsJvjpKg> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "PersoonReis linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9Je3k2euYQ3pWE2mTJPfhv
+<http://webprotege.stanford.edu/R9Je3k2euYQ3pWE2mTJPfhv> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:label "FractieZetel linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9PuZ6gaywgn0gLGsrQdlC4
+<http://webprotege.stanford.edu/R9PuZ6gaywgn0gLGsrQdlC4> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:label "Agendapunt linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9UU1fwxeYKU8yM05moRNBb
+<http://webprotege.stanford.edu/R9UU1fwxeYKU8yM05moRNBb> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "PersoonContactinformatie linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9iRzI6qaeGrD0V0HKZDGKP
+<http://webprotege.stanford.edu/R9iRzI6qaeGrD0V0HKZDGKP> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:label "Document linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9jZAsZykUw9N2P5hVUoiEe
+<http://webprotege.stanford.edu/R9jZAsZykUw9N2P5hVUoiEe> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:label "Besluit linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9nhoZl4aMPwYzetnVChyPY
+<http://webprotege.stanford.edu/R9nhoZl4aMPwYzetnVChyPY> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:label "Commissie linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9sHRdaw3FdlsnEXEdjSHrT
+<http://webprotege.stanford.edu/R9sHRdaw3FdlsnEXEdjSHrT> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:label "Commissie linkt naar ActiviteitActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9u12y32PyrqlbbFXdWxNl4
+<http://webprotege.stanford.edu/R9u12y32PyrqlbbFXdWxNl4> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                         rdfs:label "Commissie linkt naar DocumentActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9wgRrhIIjv8LdXHyalhnfS
+<http://webprotege.stanford.edu/R9wgRrhIIjv8LdXHyalhnfS> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:label "Agendapunt linkt naar Document"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/R9zfLzd3J8rspQCfSLpdz2P
+<http://webprotege.stanford.edu/R9zfLzd3J8rspQCfSLpdz2P> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "CommissieZetelVastPersoon linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RB0Cr2EakEGN8rPprlGtL4
+<http://webprotege.stanford.edu/RB0Cr2EakEGN8rPprlGtL4> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:label "PersoonNevenfunctie linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RB1mzVPaqN97DdP3JFNg0Bp
+<http://webprotege.stanford.edu/RB1mzVPaqN97DdP3JFNg0Bp> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> ;
+                                                         rdfs:label "FractieZetel linkt naar FractieZetelVacature"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RB4AQWdDzQ9YcT1oPmp8QhJ
+<http://webprotege.stanford.edu/RB4AQWdDzQ9YcT1oPmp8QhJ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:label "Persoon linkt naar Stemming"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBDiJCr6aiAXgxIfc3bqglb
+<http://webprotege.stanford.edu/RBDiJCr6aiAXgxIfc3bqglb> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> ;
+                                                         rdfs:label "Commissie linkt naar CommissieContactinformatie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBIzVwNI4aN6V11Cwbu0Izi
+<http://webprotege.stanford.edu/RBIzVwNI4aN6V11Cwbu0Izi> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:label "Reservering linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBP30bG65qqlztecngzMVJQ
+<http://webprotege.stanford.edu/RBP30bG65qqlztecngzMVJQ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:label "DocumentVersie linkt naar Document"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBR2qeIWzUfDFaaJ91mMMBe
+<http://webprotege.stanford.edu/RBR2qeIWzUfDFaaJ91mMMBe> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie> ;
+                                                         rdfs:label "Persoon linkt naar PersoonContactinformatie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBSVYA3C64gHjAiRruLQANV
+<http://webprotege.stanford.edu/RBSVYA3C64gHjAiRruLQANV> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:label "Commissie linkt naar CommissieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBXJUMKeMvv3lMeWrZvfXBQ
+<http://webprotege.stanford.edu/RBXJUMKeMvv3lMeWrZvfXBQ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ;
+                                                         rdfs:label "Persoon linkt naar FractieZetelPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBdYFtRFkSObP5LmaBirSZq
+<http://webprotege.stanford.edu/RBdYFtRFkSObP5LmaBirSZq> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:label "Activiteit linkt naar ActiviteitActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBe5HCyZZprgDVdZA42ztsi
+<http://webprotege.stanford.edu/RBe5HCyZZprgDVdZA42ztsi> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "CommissieZetelVervangerPersoon linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBhMK7qwNhWVxXRusrtKPBg
+<http://webprotege.stanford.edu/RBhMK7qwNhWVxXRusrtKPBg> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:label "Persoon linkt naar ActiviteitActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RBiiYXpxMXpwx3SDLOBbmVe
+<http://webprotege.stanford.edu/RBiiYXpxMXpwx3SDLOBbmVe> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Verslag> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                         rdfs:label "Verslag linkt naar Vergadering"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RByTicYbcHHccGyOMYVdN7b
+<http://webprotege.stanford.edu/RByTicYbcHHccGyOMYVdN7b> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:label "Kamerstukdossier linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCIcswr6lmGGXuEV1Yma3TD
+<http://webprotege.stanford.edu/RCIcswr6lmGGXuEV1Yma3TD> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "PersoonGeschenk linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCKunce5zEPhjFltFzeR6JI
+<http://webprotege.stanford.edu/RCKunce5zEPhjFltFzeR6JI> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ;
+                                                         rdfs:label "CommissieZetel linkt naar CommissieZetelVastVacature"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCWIkrDdVUjMcCeA23I2VYJ
+<http://webprotege.stanford.edu/RCWIkrDdVUjMcCeA23I2VYJ> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "DocumentActor linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCaG0fF81sSpfH49vUDZjvq
+<http://webprotege.stanford.edu/RCaG0fF81sSpfH49vUDZjvq> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:label "Activiteit linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCetjKsjycVtfn9ZR4o5XQS
+<http://webprotege.stanford.edu/RCetjKsjycVtfn9ZR4o5XQS> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                         rdfs:label "Persoon linkt naar PersoonReis"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCkET5mJWZ0UoCoZN0pK70x
+<http://webprotege.stanford.edu/RCkET5mJWZ0UoCoZN0pK70x> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                         rdfs:label "Fractie linkt naar ActiviteitActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCpYbiw2fevmFDlmrvRBhbE
+<http://webprotege.stanford.edu/RCpYbiw2fevmFDlmrvRBhbE> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                         rdfs:label "Fractie linkt naar DocumentActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCvJDyguo4LnSRSumjhYRTW
+<http://webprotege.stanford.edu/RCvJDyguo4LnSRSumjhYRTW> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:label "Stemming linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCvd6AFi4nVjiLgnozXXGo
+<http://webprotege.stanford.edu/RCvd6AFi4nVjiLgnozXXGo> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:label "Persoon linkt naar ZaakActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCvj8Zk6buT9Ik322C3u6xg
+<http://webprotege.stanford.edu/RCvj8Zk6buT9Ik322C3u6xg> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:label "FractieAanvullendGegeven linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCx5uhfYhNX6pGuEPHckHxF
+<http://webprotege.stanford.edu/RCx5uhfYhNX6pGuEPHckHxF> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:label "Activiteit linkt naar Agendapunt"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RCy1iDhP7dBqM1itsl5Uyxv
+<http://webprotege.stanford.edu/RCy1iDhP7dBqM1itsl5Uyxv> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:label "Activiteit linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDAHx55t8bJMvm5fJgEfbi0
+<http://webprotege.stanford.edu/RDAHx55t8bJMvm5fJgEfbi0> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:label "Document linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDDcbZP0WBHNh523Hcs2GLE
+<http://webprotege.stanford.edu/RDDcbZP0WBHNh523Hcs2GLE> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ;
+                                                         rdfs:label "Fractie linkt naar CommissieZetelVervangerVacature"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDIwrRttEESCHFxlLuoUQJb
+<http://webprotege.stanford.edu/RDIwrRttEESCHFxlLuoUQJb> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ;
+                                                         rdfs:label "Persoon linkt naar PersoonLoopbaan"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDKpPCdD9mSlZxg2oObM7Is
+<http://webprotege.stanford.edu/RDKpPCdD9mSlZxg2oObM7Is> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Verslag> ;
+                                                         rdfs:label "Vergadering linkt naar Verslag"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDTgv6yCyHZXgMgjVZzIBwx
+<http://webprotege.stanford.edu/RDTgv6yCyHZXgMgjVZzIBwx> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                         rdfs:label "PersoonNevenfunctie linkt naar PersoonNevenfunctieInkomsten"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDXKsphgWhSfMR6zm2FT7is
+<http://webprotege.stanford.edu/RDXKsphgWhSfMR6zm2FT7is> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                         rdfs:label "Zaak linkt naar Kamerstukdossier"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDYmUkiw7YSNsJHjlyhHOFM
+<http://webprotege.stanford.edu/RDYmUkiw7YSNsJHjlyhHOFM> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ;
+                                                         rdfs:label "CommissieZetel linkt naar CommissieZetelVervangerVacature"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDauABneZHFDBp6m56cicUW
+<http://webprotege.stanford.edu/RDauABneZHFDBp6m56cicUW> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:label "Agendapunt linkt naar Zaak"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDda5ysSGJXIWoUmLDF0Z0F
+<http://webprotege.stanford.edu/RDda5ysSGJXIWoUmLDF0Z0F> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ;
+                                                         rdfs:label "Persoon linkt naar CommissieZetelVastPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDlInWdAcpMQ34q9uImfwOy
+<http://webprotege.stanford.edu/RDlInWdAcpMQ34q9uImfwOy> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ;
+                                                         rdfs:label "CommissieZetel linkt naar CommissieVervangerPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDmsCdhHfc7pkPPLwcCAQph
+<http://webprotege.stanford.edu/RDmsCdhHfc7pkPPLwcCAQph> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ;
+                                                         rdfs:label "CommissieZetel linkt naar CommissieZetelVastPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDxBFPXDLnEQSTMBT89jCiD
+<http://webprotege.stanford.edu/RDxBFPXDLnEQSTMBT89jCiD> rdf:type owl:ObjectProperty ;
+                                                         rdfs:subPropertyOf owl:topObjectProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:range <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                         rdfs:label "Zaak linkt naar Besluit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RFLjR486UYknb0PRMVYjip
+<http://webprotege.stanford.edu/RFLjR486UYknb0PRMVYjip> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:label "Fractie linkt naar ZaakActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RIu5SjM7AdB43pNsUN3TIO
+<http://webprotege.stanford.edu/RIu5SjM7AdB43pNsUN3TIO> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                        rdfs:label "DocumentActor linkt naar Document"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RNQescACJbDA7itqC5vmrk
+<http://webprotege.stanford.edu/RNQescACJbDA7itqC5vmrk> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:label "Zaak linkt naar ZaakActor"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RNrsJHS7XecfhWdpfOFIrN
+<http://webprotege.stanford.edu/RNrsJHS7XecfhWdpfOFIrN> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                        rdfs:label "Zaak linkt naar Activiteit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RRaALu3WjhGkAy42kvn87
+<http://webprotege.stanford.edu/RRaALu3WjhGkAy42kvn87> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaal> ;
+                                                       rdfs:range <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                       rdfs:label "Zaal linkt naar Reservering"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RUjkdu9GfyRED72E1G4Z8f
+<http://webprotege.stanford.edu/RUjkdu9GfyRED72E1G4Z8f> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                        rdfs:label "Agendapunt linkt naar Besluit"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RWjg3xOQQyPtkrimgu537w
+<http://webprotege.stanford.edu/RWjg3xOQQyPtkrimgu537w> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                        rdfs:label "CommissieZetelVervangerPersoon linkt naar CommissieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RbTGj12OtWA4i8yC1AMeYm
+<http://webprotege.stanford.edu/RbTGj12OtWA4i8yC1AMeYm> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                        rdfs:label "FractieZetelvacature linkt naar FractieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RhErEVzk0bqV4kHcgx5oQO
+<http://webprotege.stanford.edu/RhErEVzk0bqV4kHcgx5oQO> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                        rdfs:label "Zaak linkt naar Document"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RhyIqEeijGStucePF8ZX6
+<http://webprotege.stanford.edu/RhyIqEeijGStucePF8ZX6> rdf:type owl:ObjectProperty ;
+                                                       rdfs:subPropertyOf owl:topObjectProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ;
+                                                       rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                       rdfs:label "CommissieZetelVervangerVacature linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RiEgXmqPepnCB7dZ07lu4A
+<http://webprotege.stanford.edu/RiEgXmqPepnCB7dZ07lu4A> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                        rdfs:label "ZaakActor linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RjhMv8ZgTtPwwKeYSM0ljL
+<http://webprotege.stanford.edu/RjhMv8ZgTtPwwKeYSM0ljL> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ;
+                                                        rdfs:label "Persoon linkt naar CommissieZetelVervangerPersoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RjtxoZYuAHhVDU2VK1giGf
+<http://webprotege.stanford.edu/RjtxoZYuAHhVDU2VK1giGf> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                        rdfs:label "ZaakActor linkt naar Commissie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RmgUiYyYHxVwUiba69CpyR
+<http://webprotege.stanford.edu/RmgUiYyYHxVwUiba69CpyR> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                        rdfs:label "FractieZetelPersoon linkt naar FractieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RoFN2Ez6iXQr8FKNqimPjY
+<http://webprotege.stanford.edu/RoFN2Ez6iXQr8FKNqimPjY> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                        rdfs:label "CommissieZetelVastVacature linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RpJaM8IgTuR28iR1zQeRSj
+<http://webprotege.stanford.edu/RpJaM8IgTuR28iR1zQeRSj> rdf:type owl:ObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ;
+                                                        rdfs:label "CommissieZetelVastVacature linkt naar CommissieZetel"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RrzDgFZxg2AvIwWgYddCh7
+<http://webprotege.stanford.edu/RrzDgFZxg2AvIwWgYddCh7> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                        rdfs:label "DocumentActor linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RuRnm0JGZ4yKV2itMQPUej
+<http://webprotege.stanford.edu/RuRnm0JGZ4yKV2itMQPUej> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                        rdfs:label "ActiviteitActor linkt naar Fractie"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RyAZkpxf1n0Q4PxcbWUixx
+<http://webprotege.stanford.edu/RyAZkpxf1n0Q4PxcbWUixx> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:label "FractieZetelPersoon linkt naar Persoon"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RyqS3xGk3xHnh3gyB771xe
+<http://webprotege.stanford.edu/RyqS3xGk3xHnh3gyB771xe> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                        rdfs:label "Besluit linkt naar Agendapunt"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RzhggdDz2eZnrlLUHaYKgG
+<http://webprotege.stanford.edu/RzhggdDz2eZnrlLUHaYKgG> rdf:type owl:ObjectProperty ;
+                                                        rdfs:subPropertyOf owl:topObjectProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                        rdfs:range <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                        rdfs:label "Activiteit linkt naar Document"^^xsd:string .
+
+
+#################################################################
+#    Data properties
+#################################################################
+
+###  http://webprotege.stanford.edu/R9efKC1yOhpB1luOFrLV9kL
+<http://webprotege.stanford.edu/R9efKC1yOhpB1luOFrLV9kL> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:dateTime ;
+                                                         rdfs:comment "ApiGewijzigdOp komt voor bij alle entiteiten"^^xsd:string ;
+                                                         rdfs:label "ApiGewijzigdOp" .
+
+
+###  http://webprotege.stanford.edu/R9yo5QY3WrkTOD7ZFVDuV7K
+<http://webprotege.stanford.edu/R9yo5QY3WrkTOD7ZFVDuV7K> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:boolean ;
+                                                         rdfs:label "Verwijderd" ;
+                                                         <http://www.w3.org/2004/02/skos/core#comment> "Verwijderd komt voor bij alle entiteiten"^^xsd:string .
+
+
+###  http://webprotege.stanford.edu/RDX5syA1SIl8I2I94wNWxRw
+<http://webprotege.stanford.edu/RDX5syA1SIl8I2I94wNWxRw> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:subPropertyOf owl:topDataProperty ;
+                                                         rdfs:range xsd:dateTime ;
+                                                         rdfs:comment "GewijzigdOp komt voor bij alle entiteiten"^^xsd:string ;
+                                                         rdfs:label "GewijzigdOp" .
+
+
+###  http://webprotege.stanford.edu/RlP4ixtRUZmOeT4STzkRZt
+<http://webprotege.stanford.edu/RlP4ixtRUZmOeT4STzkRZt> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:subPropertyOf owl:topDataProperty ;
+                                                        rdfs:range <http://webprotege.stanford.edu/RCGNEVZuUyCuA6Z2vKFqHDl> ;
+                                                        rdfs:comment "Id komt voor bij alle entiteiten"^^xsd:string ;
+                                                        rdfs:label "Id"^^xsd:string .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Aanhangselnummer
+<https://opendata.tweedekamer.nl/documentatie/Aanhangselnummer> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                                rdfs:range xsd:string ;
+                                                                rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/AantalStemmen
+<https://opendata.tweedekamer.nl/documentatie/AantalStemmen> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                             rdfs:range xsd:integer ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/AantalZetels
+<https://opendata.tweedekamer.nl/documentatie/AantalZetels> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                            rdfs:range xsd:integer ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Aanvangstijd
+<https://opendata.tweedekamer.nl/documentatie/Aanvangstijd> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                            rdfs:range xsd:dateTime ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Achternaam
+<https://opendata.tweedekamer.nl/documentatie/Achternaam> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ActiviteitNummer
+<https://opendata.tweedekamer.nl/documentatie/ActiviteitNummer> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                                rdfs:range xsd:string ;
+                                                                rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Activiteit_Id
+<https://opendata.tweedekamer.nl/documentatie/Activiteit_Id> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                         <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                             rdfs:range xsd:string ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ActorAfkorting
+<https://opendata.tweedekamer.nl/documentatie/ActorAfkorting> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ActorFractie
+<https://opendata.tweedekamer.nl/documentatie/ActorFractie> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Stemming> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ActorNaam
+<https://opendata.tweedekamer.nl/documentatie/ActorNaam> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/Stemming> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Afgedaan
+<https://opendata.tweedekamer.nl/documentatie/Afgedaan> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                        rdfs:range xsd:boolean ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Afgesloten
+<https://opendata.tweedekamer.nl/documentatie/Afgesloten> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                          rdfs:range xsd:boolean ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Afkorting
+<https://opendata.tweedekamer.nl/documentatie/Afkorting> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/AgendapuntZaakBesluitVolgorde
+<https://opendata.tweedekamer.nl/documentatie/AgendapuntZaakBesluitVolgorde> rdf:type owl:DatatypeProperty ;
+                                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                                             rdfs:range xsd:integer ;
+                                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Agendapunt_Id
+<https://opendata.tweedekamer.nl/documentatie/Agendapunt_Id> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                             rdfs:range xsd:string ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Alias
+<https://opendata.tweedekamer.nl/documentatie/Alias> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                     rdfs:range xsd:string ;
+                                                     rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Bedrag
+<https://opendata.tweedekamer.nl/documentatie/Bedrag> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                      rdfs:range xsd:decimal ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BedragAchtervoegsel
+<https://opendata.tweedekamer.nl/documentatie/BedragAchtervoegsel> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                                   rdfs:range xsd:string ;
+                                                                   rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BedragSoort
+<https://opendata.tweedekamer.nl/documentatie/BedragSoort> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "Mogelijke waarden: Bruto, Netto, Onbekend" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BedragValuta
+<https://opendata.tweedekamer.nl/documentatie/BedragValuta> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BedragVoorvoegsel
+<https://opendata.tweedekamer.nl/documentatie/BedragVoorvoegsel> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Besloten
+<https://opendata.tweedekamer.nl/documentatie/Besloten> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                        rdfs:range xsd:boolean ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BesluitSoort
+<https://opendata.tweedekamer.nl/documentatie/BesluitSoort> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BesluitTekst
+<https://opendata.tweedekamer.nl/documentatie/BesluitTekst> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Besluit_Id
+<https://opendata.tweedekamer.nl/documentatie/Besluit_Id> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Bestandsgrootte
+<https://opendata.tweedekamer.nl/documentatie/Bestandsgrootte> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                               rdfs:range xsd:integer ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Bestemming
+<https://opendata.tweedekamer.nl/documentatie/Bestemming> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/BetaaldDoor
+<https://opendata.tweedekamer.nl/documentatie/BetaaldDoor> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Citeertitel
+<https://opendata.tweedekamer.nl/documentatie/Citeertitel> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetel_Id
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetel_Id> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ,
+                                                                             <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ,
+                                                                             <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ,
+                                                                             <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Commissie_Id
+<https://opendata.tweedekamer.nl/documentatie/Commissie_Id> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ContentLength
+<https://opendata.tweedekamer.nl/documentatie/ContentLength> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                         <https://opendata.tweedekamer.nl/documentatie/Fractie> ,
+                                                                         <https://opendata.tweedekamer.nl/documentatie/Persoon> ,
+                                                                         <https://opendata.tweedekamer.nl/documentatie/Verslag> ;
+                                                             rdfs:range xsd:integer ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ContentType
+<https://opendata.tweedekamer.nl/documentatie/ContentType> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Fractie> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Persoon> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Verslag> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Datum
+<https://opendata.tweedekamer.nl/documentatie/Datum> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                     rdfs:range xsd:dateTime ;
+                                                     rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DatumActief
+<https://opendata.tweedekamer.nl/documentatie/DatumActief> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                           rdfs:range xsd:dateTime ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DatumInactief
+<https://opendata.tweedekamer.nl/documentatie/DatumInactief> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                         <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                             rdfs:range xsd:dateTime ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DatumOntvangst
+<https://opendata.tweedekamer.nl/documentatie/DatumOntvangst> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                              rdfs:range xsd:dateTime ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DatumRegistratie
+<https://opendata.tweedekamer.nl/documentatie/DatumRegistratie> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                                rdfs:range xsd:dateTime ;
+                                                                rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DatumSoort
+<https://opendata.tweedekamer.nl/documentatie/DatumSoort> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Mogelijke waarden: Dag, Meerdaags, Nog geen datum bekend, Weeknummer" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DocumentNummer
+<https://opendata.tweedekamer.nl/documentatie/DocumentNummer> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Document_Id
+<https://opendata.tweedekamer.nl/documentatie/Document_Id> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Doel
+<https://opendata.tweedekamer.nl/documentatie/Doel> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Eindtijd
+<https://opendata.tweedekamer.nl/documentatie/Eindtijd> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                        rdfs:range xsd:dateTime ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Extensie
+<https://opendata.tweedekamer.nl/documentatie/Extensie> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieGrootte
+<https://opendata.tweedekamer.nl/documentatie/FractieGrootte> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                              rdfs:range xsd:integer ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieZetel_Id
+<https://opendata.tweedekamer.nl/documentatie/FractieZetel_Id> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ,
+                                                                           <https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Fractie_Id
+<https://opendata.tweedekamer.nl/documentatie/Fractie_Id> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/Stemming> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Frequentie
+<https://opendata.tweedekamer.nl/documentatie/Frequentie> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Mogelijke waarden: Eenmalig, Per dag, Per jaar, Per maand, Vrije invoer" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FrequentieBeschrijving
+<https://opendata.tweedekamer.nl/documentatie/FrequentieBeschrijving> rdf:type owl:DatatypeProperty ;
+                                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                                      rdfs:range xsd:string ;
+                                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Functie
+<https://opendata.tweedekamer.nl/documentatie/Functie> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/Persoon> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:comment "" ,
+                                                                    "Mogelijke waarden: Eerste ondervoorzitter Tweede Kamer, Fng ondervoorzitter, Fng voorzitter, Lid, Ondervoorzitter, Penningmeester, Plv. lid, Tweede ondervoorzitter Tweede Kamer, Vervanger (ambtelijk lid), Voorzitter" ,
+                                                                    "Mogelijke waarden: Eerste ondervoorzitter Tweede Kamer, Fng voorzitter, Lid, Ondervoorzitter, Voorzitter" ,
+                                                                    "Mogelijke waarden: Fractievoorzitter, Lid" ,
+                                                                    "Mogelijke waarden: Ondervoorzitter, Plv. lid" ,
+                                                                    "Mogelijke waarden: Ondervoorzitter, Plv. lid, Voorzitter" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Geboortedatum
+<https://opendata.tweedekamer.nl/documentatie/Geboortedatum> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                             rdfs:range xsd:dateTime ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Geboorteland
+<https://opendata.tweedekamer.nl/documentatie/Geboorteland> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Geboorteplaats
+<https://opendata.tweedekamer.nl/documentatie/Geboorteplaats> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Geslacht
+<https://opendata.tweedekamer.nl/documentatie/Geslacht> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "Mogelijke waarden: man, vrouw" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/GestartOp
+<https://opendata.tweedekamer.nl/documentatie/GestartOp> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:range xsd:dateTime ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Gewicht
+<https://opendata.tweedekamer.nl/documentatie/Gewicht> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetel> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/FractieZetel> ;
+                                                       rdfs:range xsd:integer ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Grondslagvoorhang
+<https://opendata.tweedekamer.nl/documentatie/Grondslagvoorhang> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/GrootProject
+<https://opendata.tweedekamer.nl/documentatie/GrootProject> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                            rdfs:range xsd:boolean ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/HoogsteVolgnummer
+<https://opendata.tweedekamer.nl/documentatie/HoogsteVolgnummer> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                                 rdfs:range xsd:integer ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/HuidigeBehandelstatus
+<https://opendata.tweedekamer.nl/documentatie/HuidigeBehandelstatus> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                                     rdfs:range xsd:string ;
+                                                                     rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/HuidigeDocumentVersie_Id
+<https://opendata.tweedekamer.nl/documentatie/HuidigeDocumentVersie_Id> rdf:type owl:DatatypeProperty ;
+                                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                                        rdfs:range xsd:string ;
+                                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Inhoudsopgave
+<https://opendata.tweedekamer.nl/documentatie/Inhoudsopgave> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                             rdfs:range xsd:string ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Initialen
+<https://opendata.tweedekamer.nl/documentatie/Initialen> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Instelling
+<https://opendata.tweedekamer.nl/documentatie/Instelling> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/IsActief
+<https://opendata.tweedekamer.nl/documentatie/IsActief> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                        rdfs:range xsd:boolean ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Jaar
+<https://opendata.tweedekamer.nl/documentatie/Jaar> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Kabinetsappreciatie
+<https://opendata.tweedekamer.nl/documentatie/Kabinetsappreciatie> rdf:type owl:DatatypeProperty ;
+                                                                   rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                                   rdfs:range xsd:string ;
+                                                                   rdfs:comment "Mogelijke waarden: Geen (expliciete) appreciatie, Niet beschikbaar bij gewijzigde moties en/of amendementen, Niet beschikbaar bij moties en/of amendementen vóór 1 april 2019, Nog niet bekend, Nog te ontvangen, Ontraden, Ontraden, tenzij gewijzigd, Oordeel Kamer, Overgenomen, Verzocht motie aan te houden" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Kamer
+<https://opendata.tweedekamer.nl/documentatie/Kamer> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                     rdfs:range xsd:integer ,
+                                                                xsd:string ;
+                                                     rdfs:comment "" ,
+                                                                  "Mogelijke waarden: Eerste Kamer, Eerste Kamer en Tweede Kamer, Tweede Kamer" ,
+                                                                  "Mogelijke waarden: Tweede Kamer" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/KenmerkAfzender
+<https://opendata.tweedekamer.nl/documentatie/KenmerkAfzender> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Land
+<https://opendata.tweedekamer.nl/documentatie/Land> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Locatie
+<https://opendata.tweedekamer.nl/documentatie/Locatie> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Naam
+<https://opendata.tweedekamer.nl/documentatie/Naam> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaal> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/NaamEN
+<https://opendata.tweedekamer.nl/documentatie/NaamEN> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/NaamNL
+<https://opendata.tweedekamer.nl/documentatie/NaamNL> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Fractie> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/NaamWebEN
+<https://opendata.tweedekamer.nl/documentatie/NaamWebEN> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/NaamWebNL
+<https://opendata.tweedekamer.nl/documentatie/NaamWebNL> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Commissie> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Nevenfunctie_Id
+<https://opendata.tweedekamer.nl/documentatie/Nevenfunctie_Id> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Noot
+<https://opendata.tweedekamer.nl/documentatie/Noot> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                    rdfs:range xsd:string ;
+                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Omschrijving
+<https://opendata.tweedekamer.nl/documentatie/Omschrijving> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/OmschrijvingEn
+<https://opendata.tweedekamer.nl/documentatie/OmschrijvingEn> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/OmschrijvingNl
+<https://opendata.tweedekamer.nl/documentatie/OmschrijvingNl> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Onderwerp
+<https://opendata.tweedekamer.nl/documentatie/Onderwerp> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/OpleidingEn
+<https://opendata.tweedekamer.nl/documentatie/OpleidingEn> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/OpleidingNl
+<https://opendata.tweedekamer.nl/documentatie/OpleidingNl> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Opmerking
+<https://opendata.tweedekamer.nl/documentatie/Opmerking> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ,
+                                                                     <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Organisatie
+<https://opendata.tweedekamer.nl/documentatie/Organisatie> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                       <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "Mogelijke waarden: Eerste Kamer en Tweede Kamer, Tweede Kamer" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Overlijdensdatum
+<https://opendata.tweedekamer.nl/documentatie/Overlijdensdatum> rdf:type owl:DatatypeProperty ;
+                                                                rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                                rdfs:range xsd:string ;
+                                                                rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Overlijdensplaats
+<https://opendata.tweedekamer.nl/documentatie/Overlijdensplaats> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PeriodeTotEnMet
+<https://opendata.tweedekamer.nl/documentatie/PeriodeTotEnMet> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PeriodeVan
+<https://opendata.tweedekamer.nl/documentatie/PeriodeVan> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonId
+<https://opendata.tweedekamer.nl/documentatie/PersoonId> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Plaats
+<https://opendata.tweedekamer.nl/documentatie/Plaats> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Relatie
+<https://opendata.tweedekamer.nl/documentatie/Relatie> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                   <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:comment "Mogelijke waarden: Afgemeld, Bewindspersoon c.a., Deelnemer, Initiatiefnemer, Interpellant, Volgcommissie" ,
+                                                                    "Mogelijke waarden: Afzender, Eerste ondertekenaar, Geaddresseerde, Mede afzender, Mede namens, Mede ondertekenaar, Namens" ,
+                                                                    "Mogelijke waarden: Gericht aan, Indiener, Medeindiener, Rapporteur, Volgcommissie, Voortouwcommissie" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Roepnaam
+<https://opendata.tweedekamer.nl/documentatie/Roepnaam> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Rubriek
+<https://opendata.tweedekamer.nl/documentatie/Rubriek> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/SidActor
+<https://opendata.tweedekamer.nl/documentatie/SidActor> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/DocumentActor> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                        rdfs:range xsd:string ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/SidActorFractie
+<https://opendata.tweedekamer.nl/documentatie/SidActorFractie> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/SidActorLid
+<https://opendata.tweedekamer.nl/documentatie/SidActorLid> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/SidVoortouw
+<https://opendata.tweedekamer.nl/documentatie/SidVoortouw> rdf:type owl:DatatypeProperty ;
+                                                           rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                           rdfs:range xsd:string ;
+                                                           rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Sluiting
+<https://opendata.tweedekamer.nl/documentatie/Sluiting> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                        rdfs:range xsd:dateTime ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Soort
+<https://opendata.tweedekamer.nl/documentatie/Soort> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Commissie> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Stemming> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Vergadering> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Verslag> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                     rdfs:range xsd:string ;
+                                                     rdfs:comment "" ,
+                                                                  "Mogelijke waarden: Aanbieding, Afscheid, Algemeen overleg, Beëdiging, Begrotingsoverleg, Bijzondere procedure, Constituerende vergadering, Delegatievergadering, E-mailprocedure, Gesprek, Hamerstukken, Herdenking, Hoorzitting / rondetafelgesprek, Inbreng feitelijke vragen, Inbreng politieke dialoog met de Europese Commissie, Inbreng schriftelijk overleg, Inbreng verslag (wetsvoorstel), Interpellatiedebat, Notaoverleg, Ontbijtbijeenkomst Parlement en Wetenschap, Petitie, Plenair debat, Procedurevergadering, Regeling van werkzaamheden, Schriftelijk commentaar algemeen, Schriftelijk commentaar gericht, Stemmingen, Technische briefing, Vergadering, Verklaring, Vragenuur, Werkbezoek, Wetgevingsoverleg" ,
+                                                                  "Mogelijke waarden: Aanbiedingsbrief, Aanhangsel van de Handelingen, Advies aan Presidium, Advies Afdeling advisering Raad van State, Advies Afdeling advisering Raad van State en Nader rapport, Advies Afdeling advisering Raad van State en Reactie van de initiatiefnemer(s), Advies commissie, Advies van andere adviesorganen, Adviesaanvraag Afdeling advisering Raad van State, Agenda plenaire vergadering, Agenda procedurevergadering, Amendement, Antwoord schriftelijke vragen, Antwoord schriftelijke vragen (nader), Begrotingstoelichting, Besluitenlijst procedurevergadering, Bijgewerkte tekst, Bijlage, Brief Afdeling advisering Raad van State, Brief Algemene Rekenkamer, Brief commissie, Brief commissie aan bewindspersoon, Brief CTIVD, Brief Eerste Kamer, Brief Europese Commissie, Brief formateur, Brief informateur, Brief Kamer, Brief lid / fractie, Brief Nationale ombudsman, Brief president Hoge Raad, Brief Presidium, Brief regering, Brief verkenner, Convocatie commissieactiviteit, Convocatie inbreng, Eindtekst, EU-voorstel, Geleidende brief, Groenboek/witboek, Inbreng verslag schriftelijk overleg, Initiatiefnota, Interpellatievragen, Jaarverslag, Koninklijke boodschap, Lijst met EU-voorstellen, Lijst van ingekomen stukken, Lijst van vragen, Lijst van vragen en antwoorden, Mededeling, Mededeling (uitstel antwoord), Memorie van toelichting, Memorie van toelichting (initiatiefvoorstel), Mondelinge vragen, Motie, Motie (gewijzigd/nader), Nader rapport, Nota, Nota n.a.v. het (nader/tweede nader/enz.) verslag, Nota van verbetering, Nota van wijziging, Nota van wijziging (initiatiefvoorstel), Onderzoeksvoorstel, Oorspronkelijke tekst, Overig, Position paper, Raming van de uitgaven, Rapport, Rapport Algemene Rekenkamer, Reactie initiatiefnemer(s), Schriftelijke vragen, Sprekerslijst, Stemmingslijst, Stemmingsuitslagen, Stenogram, Verslag (initiatief)wetsvoorstel (nader), Verslag commissie Verzoekschriften en de Burgerinitiatieven, Verslag houdende een lijst van vragen en antwoorden, Verslag van een algemeen overleg, Verslag van een bijeenkomst, Verslag van een hoorzitting / rondetafelgesprek, Verslag van een notaoverleg, Verslag van een politieke dialoog, Verslag van een rapporteur, Verslag van een schriftelijk overleg, Verslag van een werkbezoek, Verslag van een wetgevingsoverleg, Voordracht, Voorlichting Afdeling advisering Raad van State, Voorstel tot wijziging Reglement van Orde, Voorstel van wet, Voorstel van wet (initiatiefvoorstel), Voorstel van wet (tweede lezing), Wetenschappelijke factsheet, Wijzigingen voorgesteld door de regering" ,
+                                                                  "Mogelijke waarden: Amendement, Artikelen/onderdelen (wetsvoorstel), Begroting, Brief commissie, Brief Europese Commissie, Brief Kamer, Brief regering, Brief van lid/fractie/commissie, EU-voorstel, Initiatiefnota, Initiatiefwetgeving, Interpellatie, Lijst met EU-voorstellen, Mondelinge vragen, Motie, Nationale ombudsman, Netwerkverkenning, Nota naar aanleiding van het (nader) verslag, Nota van wijziging, Overig, Parlementair onderzoeksrapport, PKB/Structuurvisie, Position paper, Rapport/brief Algemene Rekenkamer, Rondvraagpunt procedurevergadering, Schriftelijke vragen, Verdrag, Verzoek bij regeling van werkzaamheden, Verzoekschrift, Voordrachten en benoemingen, Wetenschappelijke factsheet, Wetgeving, Wijziging RvO, Wijzigingen voorgesteld door de regering" ,
+                                                                  "Mogelijke waarden: Commissie, Plenair" ,
+                                                                  "Mogelijke waarden: E-mail, Facebook, Instagram, Linkedin, Twitter, Website" ,
+                                                                  "Mogelijke waarden: Eindpublicatie, Tussenpublicatie, Voorpublicatie" ,
+                                                                  "Mogelijke waarden: Niet deelgenomen, Tegen, Voor" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Spreektijd
+<https://opendata.tweedekamer.nl/documentatie/Spreektijd> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Status
+<https://opendata.tweedekamer.nl/documentatie/Status> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Besluit> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Verslag> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" ,
+                                                                   "Mogelijke waarden: Besluit, Concept voorstel, Nog te verwerken besluit, Voorstel" ,
+                                                                   "Mogelijke waarden: Casco, Gecorrigeerd, Gerectificeerd, Ongecorrigeerd" ,
+                                                                   "Mogelijke waarden: Geannuleerd, Gepland, Uitgevoerd, Verplaatst" ,
+                                                                   "Mogelijke waarden: Vrijgegeven" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/StatusCode
+<https://opendata.tweedekamer.nl/documentatie/StatusCode> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Mogelijke waarden: R2, R3" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/StatusNaam
+<https://opendata.tweedekamer.nl/documentatie/StatusNaam> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Reservering> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "Mogelijke waarden: UsrAdministrativelyCompleted, UsrMade" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/StemmingsSoort
+<https://opendata.tweedekamer.nl/documentatie/StemmingsSoort> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Besluit> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "Mogelijke waarden: Hoofdelijk, Met handopsteken, Zonder stemming" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/SysCode
+<https://opendata.tweedekamer.nl/documentatie/SysCode> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaal> ;
+                                                       rdfs:range xsd:integer ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Termijn
+<https://opendata.tweedekamer.nl/documentatie/Termijn> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                       rdfs:range xsd:dateTime ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Titel
+<https://opendata.tweedekamer.nl/documentatie/Titel> rdf:type owl:DatatypeProperty ;
+                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Vergadering> ,
+                                                                 <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                     rdfs:range xsd:string ;
+                                                     rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Titels
+<https://opendata.tweedekamer.nl/documentatie/Titels> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Toevoeging
+<https://opendata.tweedekamer.nl/documentatie/Toevoeging> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/TotEnMet
+<https://opendata.tweedekamer.nl/documentatie/TotEnMet> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/PersoonReis> ;
+                                                        rdfs:range xsd:dateTime ,
+                                                                   xsd:string ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Tussenvoegsel
+<https://opendata.tweedekamer.nl/documentatie/Tussenvoegsel> rdf:type owl:DatatypeProperty ;
+                                                             rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                             rdfs:range xsd:string ;
+                                                             rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/VRSNummer
+<https://opendata.tweedekamer.nl/documentatie/VRSNummer> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/VergaderingNummer
+<https://opendata.tweedekamer.nl/documentatie/VergaderingNummer> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                                 rdfs:range xsd:integer ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Vergadering_Id
+<https://opendata.tweedekamer.nl/documentatie/Vergadering_Id> rdf:type owl:DatatypeProperty ;
+                                                              rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Verslag> ;
+                                                              rdfs:range xsd:string ;
+                                                              rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Vergaderjaar
+<https://opendata.tweedekamer.nl/documentatie/Vergaderjaar> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Vergadering> ,
+                                                                        <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Vergissing
+<https://opendata.tweedekamer.nl/documentatie/Vergissing> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Stemming> ;
+                                                          rdfs:range xsd:boolean ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/VergoedingSoort
+<https://opendata.tweedekamer.nl/documentatie/VergoedingSoort> rdf:type owl:DatatypeProperty ;
+                                                               rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                               rdfs:range xsd:string ;
+                                                               rdfs:comment "Mogelijke waarden: Bezoldigd, Onbezoldigd, Onkostenvergoeding" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/VergoedingToelichting
+<https://opendata.tweedekamer.nl/documentatie/VergoedingToelichting> rdf:type owl:DatatypeProperty ;
+                                                                     rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> ;
+                                                                     rdfs:range xsd:string ;
+                                                                     rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Versienummer
+<https://opendata.tweedekamer.nl/documentatie/Versienummer> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/DocumentVersie> ;
+                                                            rdfs:range xsd:integer ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Volgnummer
+<https://opendata.tweedekamer.nl/documentatie/Volgnummer> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Document> ,
+                                                                      <https://opendata.tweedekamer.nl/documentatie/Zaak> ;
+                                                          rdfs:range xsd:integer ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Volgorde
+<https://opendata.tweedekamer.nl/documentatie/Volgorde> rdf:type owl:DatatypeProperty ;
+                                                        rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> ,
+                                                                    <https://opendata.tweedekamer.nl/documentatie/Agendapunt> ;
+                                                        rdfs:range xsd:integer ;
+                                                        rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Voornamen
+<https://opendata.tweedekamer.nl/documentatie/Voornamen> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Voortouwafkorting
+<https://opendata.tweedekamer.nl/documentatie/Voortouwafkorting> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Voortouwcommissie_Id
+<https://opendata.tweedekamer.nl/documentatie/Voortouwcommissie_Id> rdf:type owl:DatatypeProperty ;
+                                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                                    rdfs:range xsd:string ;
+                                                                    rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Voortouwkortenaam
+<https://opendata.tweedekamer.nl/documentatie/Voortouwkortenaam> rdf:type owl:DatatypeProperty ;
+                                                                 rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                                 rdfs:range xsd:string ;
+                                                                 rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Voortouwnaam
+<https://opendata.tweedekamer.nl/documentatie/Voortouwnaam> rdf:type owl:DatatypeProperty ;
+                                                            rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Activiteit> ;
+                                                            rdfs:range xsd:string ;
+                                                            rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Waarde
+<https://opendata.tweedekamer.nl/documentatie/Waarde> rdf:type owl:DatatypeProperty ;
+                                                      rdfs:domain <https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> ,
+                                                                  <https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie> ;
+                                                      rdfs:range xsd:string ;
+                                                      rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Werkgever
+<https://opendata.tweedekamer.nl/documentatie/Werkgever> rdf:type owl:DatatypeProperty ;
+                                                         rdfs:domain <https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> ;
+                                                         rdfs:range xsd:string ;
+                                                         rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Woonplaats
+<https://opendata.tweedekamer.nl/documentatie/Woonplaats> rdf:type owl:DatatypeProperty ;
+                                                          rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Persoon> ;
+                                                          rdfs:range xsd:string ;
+                                                          rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Zaak_Id
+<https://opendata.tweedekamer.nl/documentatie/Zaak_Id> rdf:type owl:DatatypeProperty ;
+                                                       rdfs:domain <https://opendata.tweedekamer.nl/documentatie/ZaakActor> ;
+                                                       rdfs:range xsd:string ;
+                                                       rdfs:comment "" .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Zaal
+<https://opendata.tweedekamer.nl/documentatie/Zaal> rdf:type owl:DatatypeProperty ;
+                                                    rdfs:domain <https://opendata.tweedekamer.nl/documentatie/Vergadering> ;
+                                                    rdfs:range xsd:string .
+
+
+#################################################################
+#    Classes
+#################################################################
+
+###  https://opendata.tweedekamer.nl/documentatie/Activiteit
+<https://opendata.tweedekamer.nl/documentatie/Activiteit> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ActiviteitActor
+<https://opendata.tweedekamer.nl/documentatie/ActiviteitActor> rdf:type owl:Class ;
+                                                               rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Agendapunt
+<https://opendata.tweedekamer.nl/documentatie/Agendapunt> rdf:type owl:Class ;
+                                                          rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Besluit
+<https://opendata.tweedekamer.nl/documentatie/Besluit> rdf:type owl:Class ;
+                                                       rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Commissie
+<https://opendata.tweedekamer.nl/documentatie/Commissie> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie
+<https://opendata.tweedekamer.nl/documentatie/CommissieContactinformatie> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetel
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetel> rdf:type owl:Class ;
+                                                              rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastPersoon> rdf:type owl:Class ;
+                                                                         rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetelVastVacature> rdf:type owl:Class ;
+                                                                          rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerPersoon> rdf:type owl:Class ;
+                                                                              rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature
+<https://opendata.tweedekamer.nl/documentatie/CommissieZetelVervangerVacature> rdf:type owl:Class ;
+                                                                               rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Document
+<https://opendata.tweedekamer.nl/documentatie/Document> rdf:type owl:Class ;
+                                                        rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DocumentActor
+<https://opendata.tweedekamer.nl/documentatie/DocumentActor> rdf:type owl:Class ;
+                                                             rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/DocumentVersie
+<https://opendata.tweedekamer.nl/documentatie/DocumentVersie> rdf:type owl:Class ;
+                                                              rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Fractie
+<https://opendata.tweedekamer.nl/documentatie/Fractie> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven
+<https://opendata.tweedekamer.nl/documentatie/FractieAanvullendGegeven> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf owl:Thing ;
+                                                                        rdfs:comment "Inactieve entiteit"^^xsd:string .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieZetel
+<https://opendata.tweedekamer.nl/documentatie/FractieZetel> rdf:type owl:Class ;
+                                                            rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon
+<https://opendata.tweedekamer.nl/documentatie/FractieZetelPersoon> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature
+<https://opendata.tweedekamer.nl/documentatie/FractieZetelVacature> rdf:type owl:Class ;
+                                                                    rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier
+<https://opendata.tweedekamer.nl/documentatie/Kamerstukdossier> rdf:type owl:Class ;
+                                                                rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Persoon
+<https://opendata.tweedekamer.nl/documentatie/Persoon> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie
+<https://opendata.tweedekamer.nl/documentatie/PersoonContactinformatie> rdf:type owl:Class ;
+                                                                        rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk
+<https://opendata.tweedekamer.nl/documentatie/PersoonGeschenk> rdf:type owl:Class ;
+                                                               rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan
+<https://opendata.tweedekamer.nl/documentatie/PersoonLoopbaan> rdf:type owl:Class ;
+                                                               rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie
+<https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctie> rdf:type owl:Class ;
+                                                                   rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten
+<https://opendata.tweedekamer.nl/documentatie/PersoonNevenfunctieInkomsten> rdf:type owl:Class ;
+                                                                            rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs
+<https://opendata.tweedekamer.nl/documentatie/PersoonOnderwijs> rdf:type owl:Class ;
+                                                                rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/PersoonReis
+<https://opendata.tweedekamer.nl/documentatie/PersoonReis> rdf:type owl:Class ;
+                                                           rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Reservering
+<https://opendata.tweedekamer.nl/documentatie/Reservering> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Stemming
+<https://opendata.tweedekamer.nl/documentatie/Stemming> rdf:type owl:Class ;
+                                                        rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Vergadering
+<https://opendata.tweedekamer.nl/documentatie/Vergadering> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Verslag
+<https://opendata.tweedekamer.nl/documentatie/Verslag> rdf:type owl:Class ;
+                                                       rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Zaak
+<https://opendata.tweedekamer.nl/documentatie/Zaak> rdf:type owl:Class .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/ZaakActor
+<https://opendata.tweedekamer.nl/documentatie/ZaakActor> rdf:type owl:Class ;
+                                                         rdfs:subClassOf owl:Thing .
+
+
+###  https://opendata.tweedekamer.nl/documentatie/Zaal
+<https://opendata.tweedekamer.nl/documentatie/Zaal> rdf:type owl:Class ;
+                                                    rdfs:subClassOf owl:Thing .
+
+
+#################################################################
+#    Annotations
+#################################################################
+
+<https://opendata.tweedekamer.nl/documentatie/Zaal> rdfs:comment "" .
+
+
+<urn:node1d8j3vbmix120474> <http://schema.semantic-web.at/ppt/languagePreferenceValue> "nl" ;
+                           <http://schema.semantic-web.at/ppt/languagePreferencePriority> "0"^^xsd:int .
+
+
+###  Generated by the OWL API (version 4.5.13) https://github.com/owlcs/owlapi
